@@ -21,14 +21,14 @@ totalPassGenNum = nr_letters + nr_symbols + nr_numbers
 for n in range(1,totalPassGenNum+1):
   if(nr_letters > 0) :
    rndint = random.randint(0,   (len(letters)-1))
-   pk = pk + f"{letters[rndint]}"
+   pk += f"{letters[rndint]}"
    nr_letters-=1
   if(nr_symbols > 0) :
    rndint2 = random.randint(0, (len(symbols)-1))
-   pk = pk + f"{symbols[rndint2]}"
+   pk += f"{symbols[rndint2]}"
    nr_symbols-=1
   if(nr_numbers > 0) :
    rndint3 = random.randint(0, (len(numbers)-1))
-   pk = pk + f"{numbers[rndint3]}"
+   pk += f"{numbers[rndint3]}"
    nr_numbers-=1
 print(pk)
